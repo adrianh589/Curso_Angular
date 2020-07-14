@@ -1,0 +1,205 @@
+<h1 class="mt-3">Pipes <small>Angular</small></h1>
+<hr>
+
+<div class="row">
+
+  <div class="col">
+
+
+    <table class="table">
+
+
+      <!-- Cabecera tabla -->
+      <thead class="thead-dark">
+        <th> Variable</th>
+        <th> Pipe</th>
+        <th> Salida</th>
+      </thead>
+
+      <!-- Pipe personalizado, para crearlo se usa el comando ng generate pipe pipes/mi-pipe -->
+      <tr>
+        <td> {{ nombre2 }}</td>
+        <td> Mi pipe </td>
+        <td> {{ nombre2 | miPipe:1:true:'hola' }} </td>
+      </tr>
+
+      <!-- Upper case -->
+      <tr>
+        <td>{{ nombre }}</td>
+        <td> Uppercase</td>
+        <td> {{ nombre | uppercase }} </td>
+      </tr>
+
+      <!-- Lower case -->
+      <tr>
+        <td>{{ nombre }}</td>
+        <td> LowerCase</td>
+        <td> {{ nombre | lowercase }} </td>
+      </tr>
+
+      <!-- Slice: Quita las X letras que se le pongan -->
+      <tr>
+        <td>{{ nombre }}</td>
+        <td> Slice: 3</td>
+        <td> {{ nombre | slice:3 }} </td>
+      </tr>
+
+      <!-- Slice: Quita las X letras que se le pongan 0:3, (inicio:final) -->
+      <tr>
+        <td>{{ nombre }}</td>
+        <td> Uppercase</td>
+        <td> {{ nombre | slice:0:3 }} </td>
+      </tr>
+
+      <!-- Slice: Quita las X letras que se le pongan 0:3, (inicio:final) -->
+      <tr>
+        <td>{{ arreglo }}</td>
+        <td> Slice:1:5</td>
+        <td> {{ arreglo | slice:1:5 }} </td>
+      </tr>
+
+      <!-- Decimal -->
+      <tr>
+        <td>{{ PI }}</td>
+        <td> Number</td>
+        <td> {{ PI | number:'1.0-0' }} </td>
+      </tr>
+
+      <!-- Percent -->
+      <tr>
+        <td>{{ porcentaje }}</td>
+        <td> Percent</td>
+        <td> {{ porcentaje | percent }} </td>
+      </tr>
+
+      <!-- Percent: parameters -->
+      <tr>
+        <td>{{ porcentaje }}</td>
+        <td> Percent -> Parameters</td>
+        <td> {{ porcentaje | percent:'2.2-2' }} </td>
+      </tr>
+
+      <!-- Manejar salarios -> Currency -->
+      <tr>
+        <td>{{ salario }}</td>
+        <td> Currency</td>
+        <td> {{ salario | currency }} </td>
+      </tr>
+
+      <!-- Manejar salarios de otros paises -> Currency:parameter -->
+      <tr>
+        <td>{{ salario }}</td>
+        <td> Currency Country</td>
+        <td> {{ salario | currency:'CAD' }} </td>
+      </tr>
+
+      <!-- Manejar salarios de otros paises -> Currency:parameter -->
+      <tr>
+        <td>{{ salario }}</td>
+        <td> Currency Withouth Decimals</td>
+        <td> {{ salario | currency:'CAD': 'symbol-narrow':'.0-0' }} </td> <!-- Dame todos los enteros y 0 decimales -->
+      </tr>
+
+      <!-- Fechas -->
+      <tr>
+        <td>{{ fecha }}</td>
+        <td> Fecha </td>
+        <td> {{ fecha | date }} </td>
+      </tr>
+
+      <!-- Fechas con parametros -->
+      <tr>
+        <td>{{ fecha }}</td>
+        <td> Fecha con parámetros</td>
+        <td> {{ fecha | date:'medium' }} </td>
+      </tr>
+
+      <!-- Fechas corta -->
+      <tr>
+        <td>{{ fecha }}</td>
+        <td> Fecha corta </td>
+        <td> {{ fecha | date:'short' }} </td>
+      </tr>
+
+      <!-- Fechas personalizadas -->
+      <tr>
+        <td>{{ fecha }}</td>
+        <td> Fecha personalizada </td>
+        <td> {{ fecha | date:'MMMM - dd' }} </td>
+      </tr>
+
+      <!-- Fechas con pipe parameter -->
+      <tr>
+        <td>{{ fecha }}</td>
+        <td> Fecha personalizada (Con locale personalizado) <br> date:'MMMM - dd': '': 'fr' </td>
+        <td> {{ fecha | date:'MMMM - dd': '':'fr' }} </td>
+      </tr>
+
+      <!-- Fechas con pipe parameter -->
+      <tr>
+        <td>{{ fecha }}</td>
+        <td> Fecha personalizada (Con variable personalizada)
+          <br>
+          date:'MMMM - dd': '': '{{ idioma }}'
+          <br>
+          <button class="btn btn-primary mr-1"(click)="idioma = 'es'" >Español</button>
+          <button class="btn btn-secondary"(click)="idioma = 'en'">Inglés</button>
+          <button class="btn btn-success ml-1"(click)="idioma = 'fr'">Francés</button>
+        </td>
+        <td> {{ fecha | date:'MMMM - dd': '':idioma }} </td>
+      </tr>
+
+      <!-- Tarea de pipes -->
+      <tr>
+        <td>{{ nombre }}</td>
+        <td>
+          Tarea de pipes -> Contrasena: {{ activar }}
+          <br>
+          <button class="btn btn-outline-primary" (click)=" activar = !activar ">
+            Activar/Desactivar
+          </button>
+        </td>
+        <td> {{ nombre | ocultarContrasena : activar }} </td>
+      </tr>
+
+      <!-- JSON -->
+      <h1>JSON</h1>
+      <div class="row">
+        <div class="col">
+          <pre>
+            {{ heroe | json }}
+          </pre>
+        </div>
+      </div>
+
+      <!-- Promesas -->
+      <h1>Promesas (Obteniendo valor)</h1>
+      <tr>
+        <td>{{ valorPromesa }}</td>
+        <td> Async </td>
+        <td> {{ valorPromesa | async }} </td>
+      </tr>
+
+
+      <h4>Slice arreglos</h4>
+      <ul>
+        <li *ngFor="let item of arreglo | slice:5:20"> {{ item }} </li>
+      </ul>
+
+    </table>
+
+  </div>
+
+</div>
+
+<h3 class="mt-3">DomSeguro</h3>
+
+<div class="row">
+  <div class="col">
+    <iframe width="560" height="315" [src]="video | domseguro"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+
+    </iframe>
+  </div>
+</div>

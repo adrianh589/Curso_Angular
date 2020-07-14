@@ -1,0 +1,14 @@
+
+<h1>Busquedas relacionadas a: <small>{{ termino }}</small></h1>
+
+<hr>
+
+<div class="card-columns" *ngIf="heroes.length != 0">
+
+  <!-- *ngFor="let heroe of heroes, let i = index" -->
+  <app-heroe-tarjeta [heroe]="foo" [index]="foo.idx" *ngFor="let foo of heroes" ></app-heroe-tarjeta>
+
+
+  <!--  <h1 #elseBlock> No se han encontrado resultados para: {{ termino }} </h1> -->
+
+</div>

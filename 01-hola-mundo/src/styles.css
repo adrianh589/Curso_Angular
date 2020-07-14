@@ -1,0 +1,7 @@
+/* You can add global styles to this file, and also import other style files */
+/*Aqui van lso estilos globales para toda la aplicacion*/
+
+footer{
+  position: fixed;
+  bottom: 0px;
+}

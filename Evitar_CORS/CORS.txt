@@ -1,0 +1,22 @@
+ 
+eso es un problema de cors, te explico lo que hay que hacer en la raiz del proyecto crea un fichero llamado proxy.conf.json, dentro le pones esto:
+
+{
+    "/api/*": {
+        "target": "'https://superheroapi.com",
+        "secure": false,
+        "changeOrigin": true
+    }
+}
+vas a donde estas solictando el api y le borras todo lo que esta delante de /api/
+
+this.http.get('/api/310232573285565/487')
+                    .subscribe(pipe(map( (resp: any) => {
+                          console.log(resp);
+Luego vas al fichero package.json y donde dice:
+
+"Start": "ng serve" lo cambias por "start": "ng serve --proxy-config proxy.conf.json",
+
+y detienes el server y lo inicas pero esta ves con el comando npm start.
+
+y completo vas a poder acceder a esa api.

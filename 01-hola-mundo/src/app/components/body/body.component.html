@@ -1,0 +1,31 @@
+<!-- Cards -->
+
+<div class="container mt-4">
+
+  <div class="row">
+        <div class="col">
+          <h1>*ngIf</h1><!-- El ngIf actua concorde a booleanos -->
+          <hr>
+          <div *ngIf="mostrar" class="card text-white bg-primary mb-3 w-100"> <!-- ngIf para validar algo -->
+            <div class="card-body">
+              <h5 class="card-title">{{ frase.autor }}</h5>
+              <p class="card-text"> {{ frase.mensaje }} </p>
+            </div>
+          </div>
+          <button (click)=" mostrar = !mostrar "  class="btn btn-outline-primary btn-block"> <!-- () hace referencia a un evento -->
+            Mostrar/Ocultar
+          </button>
+        </div>
+
+        <div class="col">
+          <h1>*ngFor</h1> <!-- ngfor trabaja concorde a arreglos -->
+          <hr>
+          <ul class="list-group">
+            <li *ngFor="let framework of frameworks; let i = index" class="list-group-item"> {{i}} - {{ framework }}</li>
+          </ul>
+  </div>
+
+</div>
+
+
+{{ frameworks }}

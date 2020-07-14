@@ -1,0 +1,8 @@
+<h1>Marvel Heroes</h1>
+
+<div class="card-columns ">
+
+  <!-- Redireccionar de un componente padre a un componente hijo -->
+  <app-heroe-tarjeta (heroeSeleccionado)="verHeroe( $event )" [heroe]="foo" [index]="i" *ngFor="let foo of heroes, let i = index" ></app-heroe-tarjeta>
+
+</div>
