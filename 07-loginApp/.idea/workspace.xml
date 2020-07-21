@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="db2ce931-f8fe-4bbc-87ea-22e69eb31845" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/app/app-routing-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/app/app-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/app/components/css/css.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/app/components/ng-switch/ng-switch.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/app/components/ng-switch/ng-switch.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/app/components/usuario/usuario-nuevo.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/app/components/usuario/usuario.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/app/components/usuario/usuario.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/app/components/usuario/usuario.routes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/app/directives/resaltado.directive.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/b4/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/b4/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/b4/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/b4/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/b4/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/b4/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/b4/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/b4/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/b4/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/b4/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/font-awesome/HELP-US-OUT.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/font-awesome/less/animated.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/font-awesome/less/bordered-pulled.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/font-awesome/less/core.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/font-awesome/less/fixed-width.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/font-awesome/less/font-awesome.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/font-awesome/less/icons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/font-awesome/less/larger.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/font-awesome/less/list.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/font-awesome/less/mixins.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/font-awesome/less/path.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/font-awesome/less/rotated-flipped.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/font-awesome/less/screen-reader.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/font-awesome/less/stacked.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/font-awesome/less/variables.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/font-awesome/scss/_animated.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/font-awesome/scss/_bordered-pulled.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/font-awesome/scss/_core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/font-awesome/scss/_fixed-width.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/font-awesome/scss/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/font-awesome/scss/_larger.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/font-awesome/scss/_list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/font-awesome/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/font-awesome/scss/_path.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/font-awesome/scss/_rotated-flipped.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/font-awesome/scss/_screen-reader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/font-awesome/scss/_stacked.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/font-awesome/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/font-awesome/scss/font-awesome.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/jquery/jq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-miscelaneos/src/assets/theter/tether.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07-authapp/src/app/components/services/auth.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07-authapp/src/app/components/services/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscelaneos/.browserslistrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscelaneos/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscelaneos/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscelaneos/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscelaneos/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscelaneos/e2e/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscelaneos/e2e/src/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscelaneos/e2e/src/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscelaneos/e2e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscelaneos/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscelaneos/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscelaneos/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscelaneos/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscelaneos/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscelaneos/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscelaneos/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscelaneos/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscelaneos/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscelaneos/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscelaneos/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscelaneos/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscelaneos/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscelaneos/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscelaneos/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscelaneos/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscelaneos/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscelaneos/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscelaneos/tsconfig.base.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscelaneos/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscelaneos/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miscelaneos/tslint.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1epQ3fVAJKhIlIQ9jq9jC43I29w" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../07-bonus-loginApp" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration name="Tests (loginApp)" type="JavaScriptTestRunnerKarma">
+      <config-file value="$PROJECT_DIR$/src/karma.conf.js" />
+      <working-directory value="$PROJECT_DIR$" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="E2E Tests (loginApp-e2e)" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/e2e/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="db2ce931-f8fe-4bbc-87ea-22e69eb31845" name="Default Changelist" comment="" />
+      <created>1595015856236</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595015856236</updated>
+      <workItem from="1595015858070" duration="345000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="467" y="121" key="FileChooserDialogImpl" timestamp="1595016201628">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state x="467" y="121" key="FileChooserDialogImpl/0.0.1366.732@0.0.1366.732" timestamp="1595016201628" />
+  </component>
+</project>

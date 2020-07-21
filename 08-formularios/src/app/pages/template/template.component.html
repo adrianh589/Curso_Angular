@@ -1,0 +1,148 @@
+<!-- Este tipo de formularios no esta orientado para grandes proyectos, ya que se hace
+ insostenible y dificil demantener a medida que el codigo va creciendo lo cual no pasa con
+ los formularios reactivos
+
+ El 99% de la manipulacion de estos formularios, se hacen por el lado del HTML
+
+ -->
+
+<h4>Formularios <small> template </small></h4>
+<hr>
+<form autocomplete="off" (ngSubmit)="guardar(forma)" #forma="ngForm">
+
+  <div>
+
+    <div class="form-group row">
+      <label class="col-2 col-form-label">Nombre</label>
+      <div class="col-8">
+
+        <!-- class.is-invalid (clase de botstrap) se mostrara cuando se true  -->
+        <input class="form-control"
+               type="text"
+               name="nombre"
+               [class.is-invalid]="nombre.invalid && nombre.touched"
+               [ngModel]="usuario.nombre"
+               placeholder="Nombre"
+               required="required"
+               minlength="5"
+               #nombre="ngModel"
+        >
+        <small *ngIf="nombre.invalid && nombre.touched"
+               class="form-text text-danger">Ingrese 5 letras</small>
+        <!-- ngModel le dice a angular que este campo de texto sera conocido como "nombre", ya que es l oque especicamos en el name -->
+      </div>
+      <!-- Pristine: por ejemplo, si del servidor llega Adrian, y yo cambio ese valor por Adrian2 entonces se dice que ya no tiene pristine porque ya ha sido manipulado por el usuario en este caso por mi-->
+      <!-- Los fomularios por template tienen propiedades como ng-dirty, ng-pristine, ng-touched entre otras, que nos permite saber las acciones del suuario, caracteristica delos formularios por template -->
+    </div>
+
+    <div class="form-group row">
+      <label class="col-2 col-form-label">Apellido</label>
+      <div class="col-8">
+
+        <input
+          #Apellido="ngModel"
+          [ngModel]="usuario.apellido"
+          name="apellido"
+          minlength="5"
+          required="required"
+          [class.is-invalid]="Apellido.invalid && Apellido.touched"
+          class="form-control"
+          type="text"
+          placeholder="Apellido">
+
+        <small *ngIf="Apellido.invalid && Apellido.touched"
+               class="form-text text-danger">Ingrese 5 letras</small>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="form-group row">
+    <label class="col-2 col-form-label">Correo</label>
+    <div class="col-8">
+
+      <input #Correo="ngModel"
+             [ngModel]="usuario.correo"
+             name="correo"
+             required="required"
+             [class.is-invalid]="Correo.invalid && Correo.touched"
+             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+             class="form-control"
+             type="email"
+             placeholder="Correo electrónico"> <!-- Patron RECOMENDADO para los emails -->
+      <small *ngIf="Correo.invalid && Correo.touched"
+             class="form-text text-danger">Correo vacio o invalido</small>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label class="col-2 col-form-label">Pais</label>
+    <div class="col-8">
+
+      <select
+        #pais="ngModel"
+        class="form-control"
+        name="pais"
+        [ngModel]="usuario.pais"
+        [disabled]="paises.length === 0"
+        required="required"
+        [class.is-invalid]="pais.invalid && pais.touched"
+      ><!-- ngModel (SIN llaves cuadradas) es para NO cargar algun valor por defecto -->
+        <option *ngFor="let pais of paises" [value]="pais['codigo']">{{ pais['nombre'] }}</option>
+      </select>
+      <small *ngIf="pais.invalid && pais.touched"
+             class="form-text text-danger">Por favor seleccione un pais</small>
+
+    </div>
+  </div>
+
+
+  <div class="form-group row">
+    <label class="col-2 col-form-label">Genero</label>
+    <div class="col-8">
+
+      <div class="form-check form-check-inline">
+
+        <input
+          class="form-check-input"
+          type="radio"
+          name="genero"
+          value="M"
+          [class.is-invalid]="genero.invalid && genero.touched"
+          required="required"
+          ngModel=""
+          #genero="ngModel">
+
+        <label class="form-check-label">Masculino</label>
+      </div>
+
+      <div class="form-check form-check-inline">
+
+        <input
+          class="form-check-input"
+          type="radio"
+          name="genero"
+          value="F"
+          [class.is-invalid]="genero.invalid && genero.touched"
+          required="required"
+          ngModel=""
+          #genero="ngModel">
+
+        <label class="form-check-label">Femenino</label>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="form-group row">
+    <label class="col-2 col-form-label">&nbsp;</label>
+    <div class="input-group col-md-8">
+      <button type="submit" class="btn btn-outline-primary btn-block">
+        Guardar
+      </button>
+    </div>
+  </div>
+
+</form>

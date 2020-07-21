@@ -4,7 +4,7 @@ import { map } from 'rxjs/operators';// para usar map el cual me permite filtrar
 
 // Este servicio debe ser creado para poder centralizar la informacion a la hora de trabajar con apis
 
-@Injectable({// Inyectable, que se puede instanciar dentro de otros componentes
+@Injectable({ // Inyectable, que se puede instanciar dentro de otros componentes
   providedIn: 'root'
 })
 export class SpotifyService {

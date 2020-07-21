@@ -1,0 +1,2 @@
+ 
+La diferencia entre éstas dos es que localStorage almacena la información de forma indefinida o hasta que se decida limpiar los datos del navegador y sessionStorage almacena información mientras el navegador donde se esté utilizando siga abierto, una vez cerrado, la información se elimina.
