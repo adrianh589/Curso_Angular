@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "firechatudemy-3cf8f": {
+      "hosting": {
+        "firechat": [
+          "firechatudemy-3cf8f"
+        ]
+      }
+    }
+  }
+}
