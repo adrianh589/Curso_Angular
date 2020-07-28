@@ -1,0 +1,14 @@
+<div class="container d-flex justify-content-center">
+
+      <div class="card w-50 h-50 mt-5" *ngIf="pelicula">
+        <img [src]="pelicula | peliculaImagen" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{pelicula['title']}}</h5>
+          <p>{{pelicula.overview}}</p>
+          <button class="btn btn-outline-danger btn-block" type="button" (click)="regresar()">
+            Regresar
+          </button>
+        </div>
+      </div>
+
+</div>

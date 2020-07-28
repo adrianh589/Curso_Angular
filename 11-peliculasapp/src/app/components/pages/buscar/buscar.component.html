@@ -1,0 +1,4 @@
+<!-- Barra buscadora -->
+<input type="text" class="form-control my-5" #text (keydown)="buscarPeli(text.value)" placeholder="Buscar pelicula">
+
+<app-cartas-pelis [results]="results"></app-cartas-pelis>

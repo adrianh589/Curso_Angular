@@ -1,0 +1,14 @@
+<div class="card-columns">
+
+  <div class="card" *ngFor="let pelicula of results">
+    <img [src]="pelicula | peliculaImagen" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{pelicula['title']}}</h5>
+
+      <button class="btn btn-outline-primary btn-block" type="button" [routerLink]="['/detalle', pelicula.id, 'buscar']">Ver detalles</button>
+
+    </div>
+
+  </div>
+
+</div>

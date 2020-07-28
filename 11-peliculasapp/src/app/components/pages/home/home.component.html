@@ -1,0 +1,21 @@
+<div class="container-fluid bg-light">
+  <div class="row py-5">
+    <div class="col offset-2">
+      <h1 style="font-size: 4rem">PelisApp</h1>
+      <p>
+        Esta es una aplicación de películas
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5">
+
+
+
+ <app-galeria [peliculas] = "carteleras | slice:0:6" titulo="Carteleras"></app-galeria>
+ <app-galeria [peliculas] = "drama | slice:0:6" titulo="Drama"></app-galeria>
+ <app-galeria [peliculas] = "populares | slice:0:6" titulo="Pupulares"></app-galeria>
+
+</div>
+

@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {ChatService} from "./services/chat.service";
 
 @Component({
   selector: 'app-root',
@@ -7,8 +6,7 @@ import {ChatService} from "./services/chat.service";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  title = 'mapas';
 
-  constructor( public _cs: ChatService ) {
-
-  }
+  google: any;
 }

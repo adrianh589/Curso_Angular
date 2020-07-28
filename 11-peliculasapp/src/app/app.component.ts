@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {ChatService} from "./services/chat.service";
+import {PeliculasService} from "./services/peliculas.service";
 
 @Component({
   selector: 'app-root',
@@ -7,8 +7,5 @@ import {ChatService} from "./services/chat.service";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
-  constructor( public _cs: ChatService ) {
-
-  }
+  title = 'peliculasapp';
 }

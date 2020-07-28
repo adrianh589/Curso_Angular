@@ -1,0 +1,53 @@
+<!-- Peliculas en cartelera -->
+<h2 class="font-weight-bold">Peliculas de {{titulo}}</h2>
+<hr>
+
+<div class="row row-cols-2 mb-5 img-thumbnail" *ngIf="peliculas">
+
+    <!-- Col 1 -->
+    <div class="col-6 pr-0">
+
+      <!-- Fila 1 -->
+      <div class="row">
+        <div class="col">
+          <img (click)="getInfoPeli(peliculas[0].id)" class="img-fluid puntero" style="width: 100%; height: 15rem;" [src]="peliculas[0] | peliculaImagen" alt="...">
+        </div>
+      </div>
+
+      <!-- Fila 2 -->
+      <div class="row">
+        <div class="col pr-0">
+          <img (click)="getInfoPeli(peliculas[1].id)" class="img-fluid puntero" style="width: 100%; height: 10rem;" [src]="peliculas[1] | peliculaImagen" alt="...">
+        </div>
+
+        <div class="col pl-0">
+          <img (click)="getInfoPeli(peliculas[2].id)" class="img-fluid puntero" style="width: 100%; height: 10rem;" [src]="peliculas[2] | peliculaImagen" alt="...">
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Col 2 -->
+    <div class="col pl-0">
+
+      <!-- Fila 2 -->
+      <div class="row">
+        <div class="col pr-0">
+          <img (click)="getInfoPeli(peliculas[3].id)" class="img-fluid puntero" style="width: 100%; height: 10rem;" [src]="peliculas[3] | peliculaImagen" alt="...">
+        </div>
+
+        <div class="col pl-0">
+          <img (click)="getInfoPeli(peliculas[4].id)" class="img-fluid puntero" style="width: 100%; height: 10rem;" [src]="peliculas[4] | peliculaImagen" alt="...">
+        </div>
+      </div>
+
+      <!-- Fila 1 -->
+      <div class="row">
+        <div class="col">
+          <img (click)="getInfoPeli(peliculas[5].id)" class="img-fluid puntero" style="width: 100%; height: 15rem;" [src]="peliculas[5] | peliculaImagen" alt="...">
+        </div>
+      </div>
+
+    </div>
+
+  </div>
