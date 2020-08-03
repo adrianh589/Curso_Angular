@@ -1,0 +1,30 @@
+<!-- Pagina de donde se sacan buenos gráficos:
+
+https://swimlane.github.io/ngx-charts/#/ngx-charts/bar-horizontal-stacked-negative
+https://valor-software.com/ng2-charts/
+
+-->
+
+<div class="row">
+  <div class="col-12">
+    <ngx-charts-bar-horizontal
+      [view]="view"
+      [scheme]="colorScheme"
+      [results]="results"
+      [gradient]="gradient"
+      [xAxis]="showXAxis"
+      [yAxis]="showYAxis"
+      [legend]="showLegend"
+      [showXAxisLabel]="showXAxisLabel"
+      [showYAxisLabel]="showYAxisLabel"
+      [xAxisLabel]="xAxisLabel"
+      [yAxisLabel]="yAxisLabel"
+      (select)="onSelect($event)"
+      (activate)="onActivate($event)"
+      (deactivate)="onDeactivate($event)"
+      style="fill: gray"
+    >
+    </ngx-charts-bar-horizontal>
+  </div>
+</div>
+

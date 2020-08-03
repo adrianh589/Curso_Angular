@@ -1,0 +1,12 @@
+<h1>Paises</h1>
+<hr>
+
+<ul class="list-group" cdkDropList
+  (cdkDropListDropped)="drop($event)"
+> <!-- Drop list dice que unicamente dentro de este div se pueden mover los elementos -->
+  <li cdkDrag
+    class="list-group-item"
+    *ngFor="let pais of paises"> <!-- cdkDrag añade la funcionalidad de poder mover los elementos -->
+    {{ pais.name }}
+  </li>
+</ul>

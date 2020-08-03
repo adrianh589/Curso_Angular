@@ -1,0 +1,34 @@
+<h1>Virtual Scroll</h1>
+<hr>
+
+<div class="row">
+  <div class="col">
+    <button class="btn btn-primary"
+    (click)="irFinal()"
+    >Ir al final</button>
+    <br>
+  </div>
+
+  <div class="col">
+    <button class="btn btn-primary"
+            (click)="irAlaMitad()"
+    >Ir a la mitad</button>
+    <br>
+  </div>
+
+  <div class="col">
+    <button class="btn btn-secondary"
+    (click)="irAlPrincipio()"
+    >Ir al principio</button>
+    <br>
+  </div>
+</div>
+
+<cdk-virtual-scroll-viewport class="list-container list-group" itemSize="50" > <!-- Lo maneja en pixeles, tener en cuenta que es como si fuera el scroll de un mobil -->
+
+  <div class="list-group-item"
+    *cdkVirtualFor="let persona of personas; let i = index; let conteo = count"> <!-- En vez de un ngFor se pone esto -->
+    Item {{i}} / {{conteo}}
+  </div>
+
+</cdk-virtual-scroll-viewport>
